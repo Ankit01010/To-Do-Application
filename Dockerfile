@@ -1,5 +1,8 @@
 FROM python:bullseye
 
+RUN apt-get update && apt-get -y install \
+    python
+
 WORKDIR /app
 
 COPY . /app
